@@ -1,0 +1,7 @@
+-- 코드를 작성해주세요
+SELECT
+COUNT(*) AS COUNT
+FROM 
+ECOLI_DATA AS T
+WHERE (T.GENOTYPE & 2) = 0 AND ((T.GENOTYPE & 1) >0 OR (T.GENOTYPE &4) > 0)
+;
